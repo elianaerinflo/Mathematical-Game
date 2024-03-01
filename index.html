@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ACTIVITY 5</title>
+</head>
+<body>
+
+    <div id="modalStartContainer">
+
+        <div id="startModalContent">
+
+            <h3>ACTIVITY 5 (MATH QUIZ)</h3>
+            <button id="btnStart" onclick="startGame()">START</button>
+            
+        </div>
+
+    </div>
+
+    <div class="startContainer">
+
+        <div class="timer score">
+
+            <h3>Time Left: <span id="timer">5 min 00 sec</span></h3>
+            <h3>Score: <span id="currentScore"></span><span id="questionCount"></span></h3>    
+
+        </div>
+
+    </div>
+
+    <div class="levelContainer">
+        <h3>Level <span id="level">1.1</span>(<span id="operation">Additional</span>)</h3>
+    </div>
+
+    <div class="quizContainer">
+
+        <div class="questionNumContainer">
+            <div class="questionNum">Question No. <span id="qNum"></span></div>
+        </div>
+
+        <div class="questionContainer">
+            <div id="question"></div>
+            <button id="btnSubmit" onclick="submitAnswer()">Submit</button>
+        </div>
+
+        <div class="validation">
+            <div class="incorrectAns"></div>
+            <div class="correctAns"></div>
+        </div>
+        
+    </div>
+
+    <div id="endModalContainer">
+
+        <div id="endModalContent">
+
+            <h3>Game Over</h3>
+            <p>Time's up! Do you want to try again?</p>
+            <h3>Score: <span id="finalScore">(<span id="scorePercentage"></span>)</span></h3>
+            <button id="btnTryAgain" onclick="tryAgain()">Try Again</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
